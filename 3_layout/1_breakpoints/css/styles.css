@@ -1,0 +1,118 @@
+/* aula 1 - nosso css */
+h1 {
+  color: red;
+}
+
+/* aula 2 e 3 - breakpoints */
+
+/* nada = celulares pequenos */
+
+/* sm > 576px = celulares */
+@media (min-width: 576px) { 
+  h1 {
+    color: blue;
+  }
+}
+
+/* md > 768px = tablets */
+@media (min-width: 768px) {
+  h1 {
+    color: green;
+  }
+}
+
+/* lg > 992px = desktops menores */
+@media (min-width: 992px) { 
+  h1 {
+    color: purple;
+  }
+}
+
+/* xl > 1200px = desktops maiores */
+@media (min-width: 1200px) {
+  h1 {
+    color: yellow;
+  }
+}
+
+/* xxl > 1400px = desktops, tvs */
+@media (min-width: 1400px) {
+  h1 {
+    color: teal;
+  }
+}
+
+
+/* aula 4 - .container */
+
+div {
+  margin: 40px 0;
+}
+
+.container {
+  border: 2px solid red;
+}
+
+/* aula 5 - .container-fluid*/
+
+.container-fluid {
+  border: 2px solid purple;
+}
+
+/* aula 6 - .container-x*/
+
+.container-sm {
+  border: 2px solid blue;
+}
+
+.container-md {
+  border: 2px solid crimson;
+}
+
+.container-lg {
+  border: 2px solid chocolate;
+}
+
+/* aula 7 - grid */
+
+.container {
+  border: 5px dotted blue;
+  padding: 5px;
+}
+
+.row {
+  border: 5px solid purple;
+  height: 100px;
+  padding: 5px;
+  margin: 0;
+}
+
+.col {
+  border: 2px dashed red;
+  height: 100%;
+  margin: 0;
+}
+
+/* aula 8 - tamanho colunas */
+.col-4, .col-2, .col-11, .col-1 {
+  border: 2px dashed red;
+  height: 100%;
+  margin: 0;
+}
+
+/* aula 9 - align vert */
+
+#vertical {
+  height: 250px;
+  border-color: coral;
+}
+
+#vertical .row {
+  height: 100%;
+}
+
+.col-6 {
+  border: 2px dashed red;
+  height: 50px;
+  margin: 0;
+}
