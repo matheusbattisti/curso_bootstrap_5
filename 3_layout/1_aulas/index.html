@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Breakpoints</title>
+</head>
+<body>
+  <h1>Olá Breakpoints!</h1>
+
+  <div class="container">
+    <p>Conteúdo do container</p>
+    <p>Conteúdo do container</p>
+    <p>Conteúdo do container</p>
+  </div>
+
+  <div class="container-fluid">
+    <p>Conteúdo do container</p>
+    <p>Conteúdo do container</p>
+    <p>Conteúdo do container</p>
+  </div>
+
+  <div class="container-sm">
+    <p>Conteúdo do container</p>
+  </div>
+  <div class="container-md">
+    <p>Conteúdo do container</p>
+  </div>
+  <div class="container-lg">
+    <p>Conteúdo do container</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <!-- tamanho colunas -->
+  <div class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-11"></div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+
+  <!-- Alinhamento vertical -->
+  <div class="container" id="vertical">
+    <div class="row align-items-end">
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="row align-items-center">
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
+  </div>
+
+  <!-- Alinhamento horizontal -->
+  <div class="container" >
+    <div class="row align-items-center justify-content-center">
+      <div class="col-3"></div>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="row justify-content-end">
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+
+  <!-- Alinhamento de item -->
+  <div class="container" >
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-3 align-self-center"></div>
+      <div class="col-3"></div>
+      <div class="col-3 align-self-center"></div>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="row">
+      <div class="col-3 align-self-end"></div>
+    </div>
+  </div>
+
+  <!-- Ordem -->
+  <div class="container" >
+    <div class="row">
+      <div class="col-3 order-3">3</div>
+      <div class="col-3 order-1">1</div>
+      <div class="col-3 order-4">4</div>
+      <div class="col-3 order-1">2</div>
+    </div>
+  </div>
+
+  <!-- Offset -->
+  <div class="container" id="offset">
+    <div class="row">
+      <div class="col-md-3 offset-md-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 offset-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 offset-md-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 offset-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 offset-md-5"></div>
+    </div>
+  </div>
+
+  <!-- Gutters -->
+  <div class="container" id="gutter">
+    <div class="row gx-5">
+      <div class="col">
+        <p>GX</p>
+       </div>
+       <div class="col">
+        <p>GX</p>
+       </div>
+    </div>
+    <div class="row gy-5">
+      <div class="col">
+        <p>GY</p>
+       </div>
+       <div class="col">
+        <p>GY</p>
+       </div>
+    </div>
+    <!-- adiciona padding lateral e margin vertical -->
+    <div class="row g-5">
+      <div class="col-6">
+        <p>G</p>
+       </div>
+       <div class="col-6">
+        <p>G</p>
+       </div>
+       <div class="col-6">
+        <p>G</p>
+       </div>
+       <div class="col-6">
+        <p>G</p>
+       </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>teste</p>
+       </div>
+       <div class="col">
+        <p>teste</p>
+       </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
