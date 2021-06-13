@@ -1,1 +1,13 @@
 /* Tarefa 1 */
+.col {
+  height: 50px;
+  border: 1px solid red;
+}
+
+.par {
+  background-color: #CCC;
+}
+
+.impar {
+  background-color: #333;
+}
