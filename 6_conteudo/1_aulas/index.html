@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Conteúdo</title>
+</head>
+<body>
+  <!-- headings -->
+  <h1>Heading 1</h1>
+  <h2>Heanding 2</h2>
+  <h6>Último heading</h6>
+
+  <p class="h1">Parágrafo Heading</p>
+  <span class="h3">Span Heading</span>
+
+  <!-- Display -->
+  <h1 class="display-1">Chamando a atenção</h1>
+  <p class="display-4">Esta é headline secundária!</p>
+
+  <!-- Elementos inline -->
+  <p>Precisamos <mark>destacar isso aqui</mark> para vender este produto!</p>
+  <p>Precisamos <span class="mark">destacar isso aqui</span> para vender este produto!</p>
+
+  <p>Lista de tarefas:</p>
+  <p><del>Funcionalidade a</del></p>
+  <p><span class="text-decoration-line-through">Funcionalidade b</span></p>
+  <p>Funcionalidade c</p>
+
+  <p>O <strong>produto X</strong> é o melhor do mercado!</p>
+
+  <!-- Citaçoes -->
+  <blockquote class="blockquote">
+    <p>HTML e CSS são as bases do Bootstrap.</p>
+  </blockquote>
+
+  <figure>
+    <blockquote class="blockquote">
+      <p>Não deixe o ruído das opiniões dos outros abafar a sua própria voz interior.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Uma frase de <cite title="Steve Jobs">Steve Jobs</cite>
+    </figcaption>
+  </figure>
+
+  <!-- Listas -->
+  <h2>Lista sem estilo</h2>
+  <ul class="list-unstyled">
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+  </ul>
+
+  <h2>Lista sem inline</h2>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="">link a</a></li>
+    <li class="list-inline-item"><a href="">link b</a></li>
+    <li class="list-inline-item"><a href="">link c</a></li>
+  </ul>
+
+  <!-- Imagens -->
+  <div class="col-md-4 m-4">
+    <img src="img/g_1.jpg">
+  </div>
+
+  <div class="col-md-4 m-4">
+    <img class="img-fluid" src="img/g_1.jpg">
+  </div>
+  
+  <!-- Thumbnail -->
+  <div class="col-md-4 m-4">
+    <img src="img/avatar.png" class="img-thumbnail">
+  </div>
+ 
+
+  <!-- Figure -->
+  <div class="col-md-3 m-4">
+    <figure class="figure">
+      <img src="img/g_1.jpg" class="figure-img img-fluid rounded">
+      <figcaption class="figure-caption">Grafite da Av. Paulista.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Tabela -->
+  <div class="col-6">
+    <table class="table m-4">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Sobrenome</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Matheus</td>
+          <td>Battisti</td>
+          <td>matheus@email.com</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Pedro</td>
+          <td>Mattos</td>
+          <td>pedro@email.com</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Carlos</td>
+          <td>carlos@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-6 m-4">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Produto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Geladeira</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Fogão</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>TV</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

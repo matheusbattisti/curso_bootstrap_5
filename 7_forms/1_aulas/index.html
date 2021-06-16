@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Formulários</title>
+</head>
+<body>
+
+  <!-- Criando form -->
+  <div class="col-4 m-4">
+    <h2>Formulário de Registro</h2>
+    <form>
+      <div class="mb-4">
+        <label for="email" class="form-label">E-mail:</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+        <div id="emailHelp" class="form-text">Não compartilhamos o seu endereço de e-mail.</div>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="form-label">Senha:</label>
+        <input type="password" class="form-control" id="password" placeholder="Insira sua senha">
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+  <!-- Form desabilitado -->
+  <div class="col-4 m-4">
+    <h2>Formulário de Registro</h2>
+    <form>
+      <fieldset disabled="disabled">
+        <div class="mb-4">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail" disabled>
+          <div id="emailHelp" class="form-text">Não compartilhamos o seu endereço de e-mail.</div>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label">Senha:</label>
+          <input type="password" class="form-control" id="password" placeholder="Insira sua senha">
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- Form Control -->
+  <div class="col-4 m-4">
+    <h2>Crie seu post</h2>
+    <form>
+      <div class="mb-4">
+        <label for="title" class="form-label">Título do Post:</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="Insira o título">
+      </div>
+      <div class="mb-4">
+        <label for="content" class="form-label">Conteúdo:</label>
+        <textarea name="content" id="content" rows="5" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Publicar</button>
+    </form>
+  </div>
+
+  <div class="col-4 m-4">
+    <h2>Testes form control</h2>
+    <form>
+      <div class="mb-4">
+        <label for="x" class="form-label">Título do Post:</label>
+        <input type="text" class="form-control form-control-sm" id="x" name="x" placeholder="Insira o título">
+      </div>
+      <div class="mb-4">
+        <label for="y" class="form-label">Título do Post:</label>
+        <input type="text" class="form-control" id="y" name="y" placeholder="Insira o título">
+      </div>
+      <div class="mb-4">
+        <label for="z" class="form-label">Título do Post:</label>
+        <input type="text" class="form-control form-control-lg" id="z" name="z" placeholder="Insira o título">
+      </div>
+    </form>
+  </div>
+
+  <!-- Read only -->
+  <div class="col-4 m-4">
+    <h2>Testes somente leitura</h2>
+    <div class="mb-4">
+      <label for="email" class="form-label">E-mail:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Insira seu e-mail" value="matheus@email.com" readonly>
+    </div>
+    <div class="mb-4">
+      <label for="email" class="form-label">E-mail:</label>
+      <input type="email" class="form-control-plaintext" id="email" name="email" placeholder="Insira seu e-mail" value="matheus@email.com" readonly>
+    </div>
+  </div>
+
+  <!-- Input de arquivos -->
+  <div class="col-4 m-4">
+    <h2>Testes input de arquivos</h2>
+    <div class="mb-4">
+      <label for="foto" class="form-label">Apenas um arquivo</label>
+      <input class="form-control" type="file" id="foto">
+    </div>
+    <div class="mb-4">
+      <label for="fotos" class="form-label">Múltiplos arquivos</label>
+      <input class="form-control" type="file" id="fotos" multiple>
+    </div>
+    <div class="mb-4">
+      <label for="fotos" class="form-label">Input desabilitado</label>
+      <input class="form-control" type="file" id="fotos" disabled>
+    </div>
+  </div>
+
+  <!-- Outros elementos -->
+  <div class="col-4 m-4">
+    <h2>Outros inputs</h2>
+    <form>
+      <!-- Cor -->
+      <div class="mb-4">
+        <label for="cor" class="form-label">Cor:</label>
+      <input type="color" class="form-control form-control-color" id="cor" value="#000" title="Escolha uma cor">
+      </div>   
+      <!-- Data list -->   
+      <div class="mb-4">
+        <label for="cidades" class="form-label">Selecione uma cidade:</label>
+        <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque a sua cidade...">
+        <datalist id="datalistOptions">
+          <option value="São Paulo">
+          <option value="Rio de Janeiro">
+          <option value="Florianópolis">
+          <option value="Porto Alegre">
+          <option value="Londrina">
+        </datalist>
+      </div>
+      <!-- Selects -->
+      <div class="mb-4">
+        <select class="form-select">
+          <option selected>Selecione uma opção...</option>
+          <option value="1">Primeira</option>
+          <option value="2">Segunda</option>
+          <option value="3">Terceira</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <select class="form-select" multiple>
+          <option selected>Selecione as opções desejadas</option>
+          <option value="1">Maçã</option>
+          <option value="2">Laranja</option>
+          <option value="3">Banana</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
+        <select class="form-select" disabled>
+          <option selected>Selecione uma opção...</option>
+          <option value="1">Primeira</option>
+          <option value="2">Segunda</option>
+          <option value="3">Terceira</option>
+        </select>
+      </div>
+
+      <!-- Checkbox e radio -->
+      <div class="mb-4">
+        <h2>Marque as opções</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="privacidade">
+          <label class="form-check-label" for="privacidade">
+            Aceitar termos de privacidade
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="emails" checked>
+          <label class="form-check-label" for="emails">
+            Quer receber os e-mails de propaganda?
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="desabilitado" disabled>
+          <label class="form-check-label" for="desabilitado">
+            Essa você não vai marcar
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h2>Qual você quer?</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="meu_radio" id="a" value="a" checked>
+          <label class="form-check-label" for="a">
+            Radio checado
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="meu_radio" id="b" value="b">
+          <label class="form-check-label" for="b">
+            Radio para marcar
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="meu_radio" id="c" value="c" disabled>
+          <label class="form-check-label" for="c">
+            Radio desabilitado
+          </label>
+        </div>
+      </div>
+
+      <!-- Switch -->
+      <div class="mb-4">
+        <h2>Escolha suas configurações:</h2>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flex-switch">
+          <label class="form-check-label" for="flex-switch">Você quer ativar isto?</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flex-switch-disabled" disabled>
+          <label class="form-check-label" for="flex-switch-disabled">Switch desabilitado</label>
+        </div>
+      </div>
+    
+    </form>
+  </div>
+
+</body>
+</html>

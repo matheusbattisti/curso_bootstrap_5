@@ -1,3 +1,36 @@
+/* ESTILOS GERAIS */
+* {
+  color: #25282e;
+}
+
+a, i {
+  transition: .5s;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.secondary-color {
+  color: #555;
+}
+
+.center-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #25282e;
+  color: #FFF;
+  padding: 7px 18px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
 /* HEADER */
 #header {
   text-align: center;
@@ -22,15 +55,94 @@
 /* NAVBAR */
 #navbar {
   padding: 10px;
+  margin: 10px auto;
 }
 
 #navbar a {
   width: 80px;
   color: #444;
-  text-decoration: none;
-  transition: .5s;
 }
 
 #navbar a:hover {
+  color: #c1b696;
+}
+
+/* MAIN IMAGE */
+.main-image {
+  height: 400px;
+  background-image: url('../img/g_1.jpg');
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main-image-info {
+  background-color: #FFF;
+  padding: 25px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+/* GALLERY */
+#img-2 {
+  background-image: url('../img/g_2.jpg');
+}
+
+#img-3 {
+  background-image: url('../img/g_3.jpg');
+}
+
+#img-4 {
+  background-image: url('../img/g_4.jpg');
+}
+
+#img-5 {
+  background-image: url('../img/g_5.jpg');
+}
+
+#img-6 {
+  background-image: url('../img/g_6.jpg');
+}
+
+#gallery-container h1 {
+  text-align: center;
+}
+
+#gallery-container h1,
+#gallery-container .col-md-6,
+#gallery-container .col-xs-12 {
+ margin-bottom: 50px;
+}
+
+.small-image-container {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #CCC;
+  height: 250px;
+  padding: 30px;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+#social-icons-container {
+  padding: 25px;
+}
+
+#social-icons-container div {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  margin: 20px;
+}
+
+a:hover i {
   color: #c1b696;
 }
