@@ -1,0 +1,27 @@
+body {
+  background-color: #f8f8f8;
+}
+
+#form-container {
+  background-color: #FFF;
+  border-radius: 20px;
+  margin: 50px auto;
+  padding: 50px;
+  box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#form-container h2 {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+#form-container .form-control {
+  border: none;
+  border-bottom: 1px solid #CCC;
+  border-radius: 0;
+}
+
+#form-container .form-control:focus, 
+#form-container .form-control:focus{
+  box-shadow: none;
+}
