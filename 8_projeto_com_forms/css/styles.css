@@ -2,6 +2,7 @@ body {
   background-color: #f8f8f8;
 }
 
+/* Form */
 #form-container {
   background-color: #FFF;
   border-radius: 20px;
@@ -15,6 +16,10 @@ body {
   margin-bottom: 30px;
 }
 
+#form-container a {
+  color: #222;
+}
+
 #form-container .form-control {
   border: none;
   border-bottom: 1px solid #CCC;
@@ -24,4 +29,24 @@ body {
 #form-container .form-control:focus, 
 #form-container .form-control:focus{
   box-shadow: none;
+}
+
+#form-container .form-floating label {
+  color: #CCC;
+}
+
+#form-container .form-floating > .form-control:focus~label {
+  color: #222;
+}
+
+/* Image */
+
+.row.align-items-center {
+  align-content: center;
+  height: 100%;
+}
+
+#link-container {
+  text-align: center;
+  padding-top: 50px;
 }

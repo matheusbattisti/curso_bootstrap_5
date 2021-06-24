@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container col-9" id="form-container">
-        <div class="row">
+        <div class="row gx-5">
             <div class="col-6">
                 <h2>Realize o seu cadastro</h2>
                 <form>
@@ -37,7 +37,7 @@
                         <label for="confirmpassword" class="form-label">Confirme sua senha</label>
                     </div>
                     <div class="mb-3">
-                        <div class="form-check">
+                        <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" value="" id="agree-term">
                             <label class="form-check-label" for="agree-term">
                               Você aceita os <a href="#">termos de serviço</a>?
@@ -54,8 +54,14 @@
                 </form>
             </div>
             <div class="col-6">
-                <img src="img/hello.svg" alt="Hello New Customer" class="img-fluid">
-                <a href="login.html">Eu já tenho uma conta</a>
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <img src="img/hello.svg" alt="Hello New Customer" class="img-fluid">
+                    </div>
+                    <div class="col-12" id="link-container">
+                        <a href="login.html">Eu já tenho uma conta</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
