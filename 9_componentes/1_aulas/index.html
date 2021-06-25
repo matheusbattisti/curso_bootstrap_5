@@ -91,5 +91,141 @@
       Mensagens <span class="badge bg-success">4</span>
     </button>
   </div>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Catálogo</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Página de Produto</li>
+      </ol>
+    </nav>
+    <h2>Página de Produto</h2>
+    <p>Descrição do produto</p>
+  </div>
+
+  <!-- buttons -->
+  <div class="container">
+    <div class="btn btn-primary">Botão</div>
+    <div class="btn btn-success">Criar</div>
+
+    <a href="#" class="btn btn-danger">Deletar</a>
+
+    <button class="btn btn-outline-secondary">Contorno</button>
+
+    <button class="btn btn-info btn-lg">Botão Grande</button>
+
+    <div class="col-3">
+      <div class="d-grid m-4">
+        <button class="btn btn-primary">Botão de bloco</button>
+      </div>
+    </div>
+
+    <button class="btn btn-warning" disabled>Desabilitado</button>
+
+  </div>
+
+  <!-- button group -->
+  <div class="container mb-4">
+    <h2>Configure a seção:</h2>
+    <div class="btn-group" role="group" aria-label="Exemplo">
+      <button type="button" class="btn btn-success">Diminuir</button>
+      <button type="button" class="btn btn-success">Confirmar</button>
+      <button type="button" class="btn btn-success">Aumentar</button>
+    </div>
+
+    <h2>Com outline:</h2>
+    <div class="btn-group" role="group" aria-label="Exemplo 2">
+      <button type="button" class="btn btn-outline-secondary">1</button>
+      <button type="button" class="btn btn-outline-secondary">2</button>
+      <button type="button" class="btn btn-outline-secondary">3</button>
+      <button type="button" class="btn btn-outline-secondary">4</button>
+    </div>
+
+    <h2>Vertical</h2>
+    <div class="btn-group-vertical" role="group" aria-label="Exemplo 3">
+      <button type="button" class="btn btn-warning">Opção 1</button>
+      <button type="button" class="btn btn-warning">Opção 2</button>
+      <button type="button" class="btn btn-warning">Opção 3</button>
+    </div>
+
+  </div>
+
+  <!-- card -->
+  <div class="container mb-4">
+    <div class="card mb-4">
+      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Descrição imagem">
+      <div class="card-body">
+        <p class="card-text">Esta é a descrição do produto.</p>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Descrição imagem">
+      <div class="card-body">
+        <h5 class="card-title">Título do produto</h5>
+        <p class="card-text">Descrição longa do produto X, que é muito bom!</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Card sem imagem</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Um subtítulo</h6>
+        <p class="card-text">Novamente a descrição</p>
+        <a href="#" class="card-link">Comprar</a>
+        <a href="#" class="card-link">Cancelar</a>
+      </div>
+    </div>
+
+    <div class="card text-center" id="card-banner">
+      <div class="card-header">
+        Card Banner
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Um título legal</h5>
+        <p class="card-text">Aqui pode ir uma descrição de uma oferta irresistível para o cliente.</p>
+        <a href="#" class="btn btn-primary">Acessar oferta</a>
+      </div>
+      <div class="card-footer text-muted">
+        Faltam 2 dias
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider -->
+  <div class="container mb-4">
+    <div class="col-8">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://via.placeholder.com/600" class="d-block w-100" alt="Descrição">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/600" class="d-block w-100" alt="Descrição">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/600" class="d-block w-100" alt="Descrição">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
