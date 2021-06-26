@@ -6,9 +6,16 @@ body {
 #form-container {
   background-color: #FFF;
   border-radius: 20px;
-  margin: 50px auto;
-  padding: 50px;
   box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px auto;
+  padding: 25px;
+}
+
+@media(min-width: 768px) {
+  #form-container {
+    margin: 50px auto;
+    padding: 50px;
+  }
 }
 
 #form-container h2 {
@@ -18,6 +25,15 @@ body {
 
 #form-container a {
   color: #222;
+  transition: .5s;
+}
+
+#form-container a:hover {
+  color: #6C63FF;
+}
+
+#form-container form {
+  padding-bottom: 50px;
 }
 
 #form-container .form-control {
@@ -37,6 +53,22 @@ body {
 
 #form-container .form-floating > .form-control:focus~label {
   color: #222;
+}
+
+#form-container .form-check-input:checked,
+#form-container input[type="submit"] {
+  background-color: #6C63FF;
+  border-color: #6C63FF;
+}
+
+.btn.btn-primary {
+  width: 100%;
+}
+
+@media(min-width: 768px) {
+  .btn.btn-primary {
+    width: auto;
+  }
 }
 
 /* Image */
