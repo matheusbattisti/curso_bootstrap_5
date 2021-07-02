@@ -1,0 +1,73 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #252525;
+  color: #FFF;
+}
+
+.primary-bg-color {
+  background-color: #252525;
+}
+
+.secondary-bg-color {
+  background-color: #C09578;
+}
+
+.primary-color {
+  color: #C09578;
+}
+
+.secondary-color {
+  color: #626262;
+}
+
+/* NAVBAR */
+#navbar a,
+#navbar button {
+  color: #FFF;
+}
+
+#navbar i {
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+#navbar-items {
+  justify-content: space-between;
+}
+
+#search-form {
+  border: 2px solid #626262;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+#search-form input {
+  background-color: transparent;
+  border: none;
+}
+
+#search-form input::placeholder {
+  color: #FFF;
+}
+
+/* BOTTOM NAVBAR */
+#bottom-navbar a {
+  color: #FFF;
+  font-weight: 600;
+}
+
+/* BANNERS */
+#banners-container {
+  padding: 0;
+}
+
+#slider .carousel-item,
+#slider img {
+  height: 650px;
+}

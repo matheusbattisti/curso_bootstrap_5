@@ -1,0 +1,24 @@
+body {
+  padding-bottom: 1000px;
+}
+
+.box {
+  background-color: red;
+  height: 50px;
+}
+
+.box.float-end{
+  background-color: blue;
+  width: 50px;
+}
+
+.box-fixed,
+.box-sticky {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.box-sticky {
+  background-color: teal;
+}
