@@ -37,8 +37,27 @@ body {
   color: #FFF;
 }
 
+#navbar li {
+  position: relative;
+}
+
 #navbar i {
   font-size: 20px;
+}
+
+#navbar span {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EF3636;
+  text-align: center;
+}
+
+#bag-item span {
+  left: 20px;
 }
 
 .navbar-brand {
@@ -53,11 +72,17 @@ body {
   border: 2px solid #626262;
   border-radius: 3px;
   padding: 5px 15px;
+  width: 50%;
 }
 
 #search-form input {
   background-color: transparent;
   border: none;
+  color: #FFF;
+}
+
+#search-form input:focus {
+  box-shadow: none;
 }
 
 #search-form input::placeholder {
@@ -81,7 +106,7 @@ body {
 }
 
 .carousel-caption {
-  bottom: 22em;
+  bottom: 5em;
   left: 23%;
   right: 23%;
 }
@@ -100,7 +125,7 @@ body {
   z-index: 1;
   height: 300px;
   max-width: 30%;
-  padding: 1.2em;
+  padding: 1.5em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -116,7 +141,7 @@ body {
 }
 
 #mini-banners .col img {
-  height: 200px;
+  height: 250px;
   position: absolute;
   right: 1rem;
   bottom: 1rem;
@@ -132,4 +157,48 @@ body {
 
 #mini-banners .col a:hover {
   color: #101010;
+}
+
+/* BEST SELLERS */
+#best-sellers {
+  padding: 4em 0;
+}
+
+#best-sellers .col-md-3 {
+  padding: 0;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.card {
+  text-align: center;
+  border-radius: 0;
+}
+
+.card img {
+  width: 140px;
+  margin: 2em auto;
+}
+
+.card .card-category {
+  font-size: .8rem;
+}
+
+.card .card-text {
+  margin: 2em 0;
+  font-weight: bold;
+}
+
+.card .btn {
+  background-color: transparent;
+  border-color: #C09578;
+}
+
+.card .btn:hover {
+  background-color: #C09578;
 }
