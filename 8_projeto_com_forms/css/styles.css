@@ -42,8 +42,7 @@ body {
   border-radius: 0;
 }
 
-#form-container .form-control:focus, 
-#form-container .form-control:focus{
+#form-container .form-control:focus {
   box-shadow: none;
 }
 

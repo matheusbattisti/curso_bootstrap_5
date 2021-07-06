@@ -31,6 +31,10 @@ body {
   color: #626262;
 }
 
+.light-color {
+  color: #FCF5EB
+}
+
 /* NAVBAR */
 #navbar a,
 #navbar button {
@@ -68,24 +72,28 @@ body {
   justify-content: space-between;
 }
 
-#search-form {
+#search-form,
+#news-form {
   border: 2px solid #626262;
   border-radius: 3px;
   padding: 5px 15px;
   width: 50%;
 }
 
-#search-form input {
+#search-form input,
+#news-form input {
   background-color: transparent;
   border: none;
   color: #FFF;
 }
 
-#search-form input:focus {
+#search-form input:focus,
+#news-form input:focus {
   box-shadow: none;
 }
 
-#search-form input::placeholder {
+#search-form input::placeholder,
+#news-form input::placeholder {
   color: #FFF;
 }
 
@@ -141,12 +149,11 @@ body {
 }
 
 #mini-banners .col img {
-  height: 250px;
+  height: 220px;
   position: absolute;
   right: 1rem;
   bottom: 1rem;
 }
-
 
 #mini-banners .col a {
   font-weight: bold;
@@ -157,6 +164,18 @@ body {
 
 #mini-banners .col a:hover {
   color: #101010;
+}
+
+#mini-banners #mini-banner-1 a:hover {
+  color: #C09578;
+}
+
+#mini-banners #mini-banner-3 a {
+  color: #101010;
+}
+
+#mini-banners #mini-banner-3 a:hover {
+  color: #C09578;
 }
 
 /* BEST SELLERS */
@@ -194,11 +213,188 @@ body {
   font-weight: bold;
 }
 
-.card .btn {
+.btn {
   background-color: transparent;
   border-color: #C09578;
 }
 
-.card .btn:hover {
+.btn:hover {
   background-color: #C09578;
+  border-color: #C09578;
+}
+
+/* BOTTOM BANNER */
+#bottom-banner {
+  background-color: #101010; 
+  padding: 6em;
+  margin-bottom: 4em;
+}
+
+#bottom-banner .offer-subtitle,
+#bottom-banner h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#bottom-banner h2 {
+  font-size: 6em;
+}
+
+#bottom-banner .btn {
+  margin-top: 2em;
+  font-weight: bold;
+  padding: 1em;
+}
+
+#bottom-banner img {
+  max-width: 175px;
+}
+
+/* NEW PRODUCTS */
+
+#new-products {
+  margin-bottom: 5rem;
+}
+
+#new-products-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+}
+
+#new-products-banner h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+#new-products .col-md-4 {
+  padding: 0;
+}
+
+#new-products .card img {
+  height: 150px;
+  width: 90px;
+  margin: 2em auto;
+}
+
+/* GALLERY */
+#gallery .image-container {
+  background-size: cover;
+  background-position: center;
+  height: 225px;
+  cursor: pointer;
+  transition: .5s;
+  border: 3px solid #101010;
+}
+
+#gallery .image-container:hover {
+  border-color: #C09578;
+}
+
+#insta1 {
+  background-image: url('../img/insta1.jpg');
+}
+
+#insta2 {
+  background-image: url('../img/insta2.jpg');
+}
+
+#insta3 {
+  background-image: url('../img/insta3.jpg');
+}
+
+#insta4 {
+  background-image: url('../img/insta4.jpg');
+}
+
+#insta5 {
+  background-image: url('../img/insta5.jpg');
+}
+
+#insta6 {
+  background-image: url('../img/insta6.jpg');
+}
+
+/* FOOTER */
+
+#footer-links-container {
+  border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column {
+  padding: 5em 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer-links-container h3 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#footer-links-container li {
+  font-size: .8em;
+  text-align: left;
+}
+
+#footer-links-container li a {
+  text-decoration: none;
+}
+
+#footer-links-container li a:hover {
+  color: #C09578;
+}
+
+#footer-center {
+  border-left: 1px solid #626262;
+  border-right: 1px solid #626262;
+}
+
+#footer-center h3 {
+  font-weight: 900;
+}
+
+#footer-center .store-phone {
+  color: #C09578;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: -15px;
+}
+
+#newsletter-container {
+  border-bottom: 1px solid #626262;
+  text-align: center;
+  padding: 20px;
+}
+
+#news-form {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+#social-container {
+  margin: 20px auto;
+}
+
+#social-container i {
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #626262;
+  transition: .3s;
+}
+
+#social-container i:hover {
+  color: #C09578;
+}
+
+#copy-container {
+  text-align: center;
+  padding: 30px;
 }
