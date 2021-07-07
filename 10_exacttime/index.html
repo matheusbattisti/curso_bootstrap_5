@@ -25,10 +25,7 @@
   <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#">ExactTime</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-items">
+      <div id="navbar-items">
         <div></div>
         <form class="d-flex" id="search-form">
           <i class="bi bi-search primary-color"></i>
@@ -58,9 +55,12 @@
       </div>
     </div>
   </nav>
-  <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar">
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
     <div class="container">
-      <ul class="navbar-nav mb-2 mb-lg-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
         <li class="nav-item">
           <a class="nav-link" href="#">
             Home
@@ -96,14 +96,14 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
-          <div class="carousel-caption d-none d-md-block primary-bg-color">
+          <div class="carousel-caption primary-bg-color">
             <h5>Relógios de luxo</h5>
             <p>Para você estar pronto em qualquer situação.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
-          <div class="carousel-caption d-none d-md-block primary-bg-color">
+          <div class="carousel-caption primary-bg-color">
             <h5>Linha Importada</h5>
             <p>Conheça os melhores relógios suiços, com pronta entrega.</p>
           </div>
@@ -121,17 +121,17 @@
     <!-- MINI BANNERS -->
     <div class="container" id="mini-banners">
       <div class="row justify-content-around">
-        <div class="col dark-bg-color" id="mini-banner-1">
+        <div class="col-12 dark-bg-color" id="mini-banner-1">
           <h2>Nova Coleção</h2>
           <img src="img/relogio1.png" alt="Relógio 1">
           <a href="#">Compre Agora</a>
         </div>
-        <div class="col secondary-bg-color" id="mini-banner-2">
+        <div class="col-12 secondary-bg-color" id="mini-banner-2">
           <h2>Promoções</h2>
           <img src="img/relogio2.png" alt="Relógio 1">
           <a href="#">Compre Agora</a>
         </div>
-        <div class="col light-bg-color" id="mini-banner-3">
+        <div class="col-12 light-bg-color" id="mini-banner-3">
           <h2 class="secondary-color">Edição Limitada</h2>
           <a href="#">Compre Agora</a>
           <img src="img/relogio3.png" alt="Relógio 1">
@@ -192,13 +192,13 @@
   <!-- BANNER DESTAQUE -->
   <div class="container-fluid" id="bottom-banner">
     <div class="row">
-      <div class="col-8">
+      <div class="col-12 col-md-8">
         <p class="primary-color offer-subtitle">Desconto de até 75%</p>
         <h2 class="light-color">Relógio X</h2>
         <p class="secondary-color">Presenteie o seu amor com este relógio luxuoso</p>
         <a href="#" class="btn btn-primary">Comprar agora</a>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <img src="img/relogio7.png" alt="Relógio 7">
       </div>
     </div>
@@ -207,12 +207,12 @@
   <div class="container" id="new-products">
     <h2 class="title primary-color">Novidades</h2>
     <div class="row">
-      <div class="col-3" id="new-products-banner">
+      <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
         <p class="secondary-color">Os melhores</p>
         <h3>Relógios</h3>
         <p class="primary-color">pelos melhores preços</p>
       </div>
-      <div class="col-9">
+      <div class="col-12 col-md-9">
         <div class="row">
           <div class="col-12 col-md-4">
             <div class="card primary-bg-color">
@@ -287,17 +287,17 @@
   <!-- GALLERY -->
   <div class="container-fluid" id="gallery">
     <div class="row">
-      <div class="col-2 image-container" id="insta1">
+      <div class="col-6 col-md-2 image-container" id="insta1">
       </div>
-      <div class="col-2 image-container" id="insta2">
+      <div class="col-6 col-md-2 image-container" id="insta2">
       </div>
-      <div class="col-2 image-container" id="insta3">
+      <div class="col-6 col-md-2 image-container" id="insta3">
       </div>
-      <div class="col-2 image-container" id="insta4">
+      <div class="col-6 col-md-2 image-container" id="insta4">
       </div>
-      <div class="col-2 image-container" id="insta5">
+      <div class="col-6 col-md-2 image-container" id="insta5">
       </div>
-      <div class="col-2 image-container" id="insta6">
+      <div class="col-6 col-md-2 image-container" id="insta6">
       </div>
     </div>
   </div>
@@ -348,7 +348,7 @@
       </div>
     </div>
     <div class="container" id="copy-container">
-      <p>Todos os direitos reservados @2021 WathcTime</p>
+      <p>Todos os direitos reservados @2021 <span class="primary-color">WatchTime</span> - A sua loja de relógios</p>
     </div>
   </footer>
 </body>
