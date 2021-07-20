@@ -9,3 +9,12 @@ body {
 .altura {
   height: 300px;
 }
+
+.box {
+  border: 1px solid red;
+}
+
+.box-com-wrap {
+  width: 50px;
+  border: 1px solid red;
+}

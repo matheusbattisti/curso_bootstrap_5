@@ -454,6 +454,7 @@ body {
   margin-top: -15px;
 }
 
+/* NEWS */
 #newsletter-container {
   background-color: #101010;
   border-bottom: 1px solid #626262;
@@ -490,6 +491,7 @@ body {
   color: #C09578;
 }
 
+/* COPY */
 #copy-container {
   text-align: center;
   padding: 30px;
